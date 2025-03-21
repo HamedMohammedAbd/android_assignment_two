@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".java.FilePage">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#212121"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:foregroundGravity="center"
+                android:id="@+id/image1_appbar"
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/todo"
+                android:layout_gravity="start"
+                android:src="@drawable/person"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/open"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/image3_appbar"
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_gravity="end"
+
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/diamond" />
+            <ImageView
+                android:id="@+id/image2_appbar"
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_gravity="end"
+
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/add" />
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/places"
+            android:textColor="#656565"
+            android:textSize="20sp" />
+
+        <LinearLayout
+android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="26dp"
+                android:layout_height="47dp"
+                android:layout_weight="0"
+                android:tint="#656565"
+                android:contentDescription="@string/todo"
+                android:gravity="center_vertical"
+
+
+                android:src="@drawable/schedule"
+                tools:ignore="InefficientWeight,UseAppTint" />
+
+
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recent"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="26dp"
+                android:layout_height="56dp"
+                android:layout_weight="0"
+                android:contentDescription="@string/todo"
+                android:tint="#656565"
+
+                android:src="@drawable/group_person"
+                tools:ignore="InefficientWeight,UseAppTint" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/shared_with_me"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="26dp"
+                android:layout_height="44dp"
+                android:layout_weight="0"
+                android:contentDescription="@string/todo"
+                android:tint="#656565"
+
+                android:src="@drawable/smartphone"
+                tools:ignore="InefficientWeight,UseAppTint" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/this_device"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="26dp"
+                android:layout_height="39dp"
+                android:layout_weight="0"
+                android:contentDescription="@string/todo"
+                android:tint="#656565"
+
+                android:src="@drawable/cloud"
+                tools:ignore="InefficientWeight,UseAppTint" />
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/browse_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/browse"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/browse_subTitle"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/browse_id"
+                    android:text="@string/google_drive_sd_card_and_more"
+                    android:textColor="#656565"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="26dp"
+                android:layout_height="40dp"
+                android:layout_weight="0"
+                android:contentDescription="@string/todo"
+                android:tint="#656565"
+
+                android:src="@drawable/add"
+                tools:ignore="InefficientWeight,UseAppTint" />
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/add_palce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_a_place"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/add_palce_subTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_palce"
+                    android:text="@string/connect_to_cloud_storage"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#656565"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#212121"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="26dp"
+                    android:layout_height="41dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/todo"
+
+                    android:src="@drawable/schedule"
+                    tools:ignore="InefficientWeight,NestedWeights" />
+
+                <TextView
+                    android:id="@+id/textView_bottom_recent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="26dp"
+                    android:layout_height="39dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/todo"
+
+                    android:src="@drawable/group_person"
+                    tools:ignore="InefficientWeight,NestedWeights" />
+
+                <TextView
+                    android:id="@+id/textView_bottom_shared"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shared"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="26dp"
+                    android:layout_height="39dp"
+                    android:layout_weight="0"
+                    android:contentDescription="@string/todo"
+                    android:tint="#FF5722"
+
+                    android:src="@drawable/folder"
+                    tools:ignore="InefficientWeight,NestedWeights,UseAppTint" />
+
+                <TextView
+                    android:id="@+id/textView_bottom_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open"
+
+                    android:textColor="#FF5722"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
